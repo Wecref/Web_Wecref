@@ -1,0 +1,271 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Keywords" content="차이팡, 차이팡 키즈, 차이팡 중국어, 차이팡 수학, 차이팡 덧셈, 차이팡 뺄셈, 차이팡 구구단, 위크리프, 유아 교육, 어린이 교육, 어린이 중국어, 어린이 수학, 어린이 덧셈, 어린이 뺄셈, 어린이 곱셈, 어린이 구구단" />
+    <meta name="Description" content="전 세계 어린이들이 차이팡 프렌즈와 함께 차이팡 환상의 세계에서 즐겁게 놀고 노래하고 즐기다 보면 자연스럽게 익힐 수 있는 어린이 교육 콘텐츠입니다." />
+    
+    <meta http-equiv="Subject" content="전 세계 어린이들이 차이팡 프렌즈와 함께 차이팡 환상의 세계에서 즐겁게 놀고 노래하고 즐기다 보면 자연스럽게 익힐 수 있는 어린이 교육 콘텐츠입니다." />
+    <meta http-equiv="Title" content="Chaipang Kids" />
+    <meta http-equiv="Author" content="K.Moon" />
+    <meta http-equiv="publisher" content="Wecref" />
+    <meta http-equiv="Other Agent" content="K.Moon" />
+    <meta http-equiv="Generator" content="Visual Studio Code" />
+    <meta http-equiv="Reply-To" content="wecref.dev@gmail.com" />
+    <meta http-equiv="Email" content="wecref.dev@gmail.com" />
+    <meta http-equiv="Distribution" content="K.Moon" />
+    <meta http-equiv="Copyright" content="2022 Wecref Co., Ltd." />
+    <meta name="Date" content="2022-02-25T10:23:00+09:00" />
+    <meta http-equiv="Content-Script-Type" content="Text/javascript" />
+    <meta property="https://chaipangkids.com/" content="website" />
+    <!-- 기본적 웹 설정 og 메타태그 -->
+    <meta property="og:url" content="https://chaipangkids.com/" />
+    <meta property="og:title" content="차이팡 수학" />
+    <meta
+      property="og:image"
+      content="https://chaipangkids.com/Resources/Img/share.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://chaipangkids.com/Resources/Img/share.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="차이팡 공유 썸네일" />
+    <meta
+      property="og:description"
+      content="전 세계 어린이들이 차이팡 프렌즈와 함께 차이팡 환상의 세계에서 즐겁게 놀고 노래하고 즐기다 보면 자연스럽게 익힐 수 있는 어린이 교육 콘텐츠입니다."
+    />
+    <meta property="og:site_name" content="차이팡 수학" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ko_KR" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="Resources/Img/wecref_cion.png" />
+    <title>차이팡 수학</title>
+
+    <link rel="stylesheet" href="./main.css"/>
+    <script type="module" src="./main.js" defer="defer"></script>
+</head>
+<body>
+    <span id="menu-main"></span>
+    <nav>
+        <div class="main">
+            <div class="logo">
+                <ul class="MarginZero PaddingZero">
+                    <li><img src="./Resources/Img/kids_1.png"/></li>
+                </ul>
+            </div>
+            <img
+                class="menu_icon"
+                src="./Resources/Img/list_white_48dp.svg"
+                alt="메뉴 아이콘"
+            />
+        </div>
+        <div class="contents NanumB Font20Size">
+            <ul class="menus MarginZero PaddingZero">            
+                <li data-href="#menu-main">차이팡 키즈 소개</li>
+                <li data-href="#menu-educational">교육 콘텐츠</li>
+                <li data-href="#menu-friends">차이팡 프렌즈</li>
+                <li data-href="#menu-business">사업 영역</li>
+                <li>|</li>
+                <li><a href="#">㈜위크리프</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img src="./Resources/Img/Math_4.png"/></a></li>
+                <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_5.png"/></a></li>
+                <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_6.png"/></a></li>
+            </ul>
+            <ul class="lang MarginZero PaddingZero">
+                <li data-lang="kr_index.html" class="clicked">KOR</li>
+                <li>|</li>
+                <li data-lang="en_index.html">ENG</li>
+            </ul>
+        </div>
+    </nav>
+    <div id="contents-main">
+        <img src="./Resources/Img/kids_2.png"/>
+        <div class="Info">
+            <p class="NanumB Font30Size">
+                <span class="TxtNeon">차이팡 키즈</span>는<br/> 전 세계 어린이들이 <span class="TxtNeon">차이팡 프렌즈 캐릭터</span>와 함께
+                <br /><span class="TxtNeon">차이팡 환상의 세계</span>에서 즐겁게 놀고 노래하고 즐기다 보면
+                <br />자연스럽게 익힐 수 있는 <span class="TxtNeon">어린이 교육 콘텐츠</span>입니다.
+            </p>
+        </div>
+        <img src="./Resources/Img/kids_frends.png"/>
+    </div>
+    <div id="waveDecoUp"></div>
+    <div id="waveFlagDeco"></div>  
+    <div id="contents-awards">
+        <img src="Resources/Img/Kids_garu_L.png" alt="종이효과">
+        <img src="Resources/Img/Kr/Kids_awards.png" alt="수상이력">
+        <img src="Resources/Img/Kids_garu_R.png" alt="종이효과">
+    </div>
+    <span id="menu-educational"></span>
+    <div id="contents-category">
+        <div class="one">
+            <div class="main">
+                <p class="NanumEB Font45Size">교육 콘텐츠</p>
+                <p class="NanumB Font30Size">차이팡 키즈는 <span class="TxtNeon">차이팡 중국어</span>를 주력 서비스로 하며, 
+                    <br/>차이팡 덧셈, 차이팡 뺄셈 등으로 
+                    <br/>교육 콘텐츠를 확장해 나가고 있습니다.
+                </p>
+            </div>
+            <div class="bodys">
+                <div class="category">
+                    <div class="info">
+                        <img src="Resources/Img/En/kids_3.png" alt="중국어">
+                        <p class="NanumB Font25Size">외워서 공부하지 않아도, 바로 중국어를 
+                            <br/>말할 수 있는 콘텐츠, 음표와 노래로 
+                            <br/>완벽하게 익히는 성조와 발음
+                        </p>
+                    </div>
+                    <div class="link">
+                        <img src="Resources/Img/kids_4.png" alt="앱 아이콘">
+                        <p class="NanumR Font30Size">차이팡 중국어</p>
+                        <a href=""><p class="NanumEB Font20Size">▷ 홈페이지 바로가기</p></a>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="info">
+                        <img src="Resources/Img/En/kids_5.png" alt="수학">
+                        <p class="NanumB Font25Size">게임으로 한 자릿수 덧셈 실력 향상, <span class="TxtNeonB">차이팡 덧셈</span> 
+                            <br>뺄셈 실력과 속도가 쑥쑥, <span class="TxtNeonC">차이팡 뺄셈</span> 
+                            <br/>차이팡과 함께 익히는 곱셈, <span class="TxtNeonD">차이팡 구구단</span>
+                        </p>
+                    </div>
+                    <div class="link">
+                        <img src="Resources/Img/kids_6.png" alt="앱 아이콘">
+                        <p class="NanumR Font30Size">차이팡 수학</p>
+                        <a href="https://chaipangkids.com/"><p class="NanumEB Font20Size">▷ 홈페이지 바로가기</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span id="menu-friends"></span>
+        <div class="newline"></div>
+        <div class="two">
+            <div class="main">
+                <p class="NanumEB Font45Size">차이팡 프렌즈</p>
+            </div>
+            <div class="bodys">
+                <img src="Resources/Img/Kr/kids_7.png" alt="차이팡 월드">
+                <div class="infos">
+                    <div class="template">
+                        <div class="tag">
+                            <img src="Resources/Img/kids_8.png" alt="태그 배경">
+                            <p class="kr NanumEB Font25Size">하늘에는</p>
+                        </div>
+                        <div class="info">
+                            <p class="NanumB Font25Size">둥둥섬 무지개 마을</p>
+                            <p class="NanumR Font20Size">매일 매일 즐거운 축제가 펼쳐지는 유니콘들의 마을이에요.</p>
+                        </div>
+                    </div>
+                    <div class="template">
+                        <div class="tag">
+                            <img src="Resources/Img/kids_8.png" alt="태그 배경">
+                            <p class="kr NanumEB Font25Size">땅에는</p>
+                        </div>
+                        <div class="info">
+                            <p class="NanumB Font25Size">용용산 돌바람 마을</p>
+                            <p class="NanumR Font20Size">신비한 광석과 보석이 가득한 드래곤들의 마을이에요.</p>
+                        </div>
+                    </div>
+                    <div class="template">
+                        <div class="tag">
+                            <img src="Resources/Img/kids_8.png" alt="태그 배경">
+                            <p class="kr NanumEB Font25Size">바다에는</p>
+                        </div>
+                        <div class="info">
+                            <p class="NanumB Font25Size">파랑파랑바다 진주마을</p>
+                            <p class="NanumR Font20Size">인어들이 모여 사는 아름다운 바다 도시예요.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="friendsInfo">
+                    <div class="tag">
+                        <img src="Resources/Img/kids_9.png" alt="태그">
+                        <p class="kr NanumEB Font25Size">차이팡 프렌즈를 소개합니다!</p>
+                    </div>
+                    <div class="imgs">
+                        <img src="Resources/Img/Kr/kids_10.png" alt="차이팡 콘텐츠">
+                        <img src="Resources/Img/Kr/kids_11.png" alt="차이팡 콘텐츠">
+                        <img src="Resources/Img/Kr/kids_12.png" alt="차이팡 콘텐츠">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span id="menu-business"></span>
+        <div class="newline"></div>
+        <div class="three">
+            <div class="main">
+                <p class="NanumEB Font45Size">사업 영역</p>
+                <p class="NanumB Font30Size">
+                    <span class="TxtNeon">앱 기반 어린이 교육 콘텐츠</span>를 제작할 뿐만 아니라, 
+                    <br/>교육용 <span class="TxtNeon">유튜브</span> 채널 운영, <span class="TxtNeon">서적 및 교재 출판</span> 등을 통해 
+                    <br/>교육 효과를 높이고 있습니다.</p>
+            </div>
+            <div class="template">
+                <div class="tag">
+                    <img src="Resources/Img/kids_17.png" alt="태그 배경">
+                    <p class="kr NanumEB Font25Size">모바일 및 태블릿 앱</p>
+                </div>
+                <img src="Resources/Img/kids_13.png" alt="차이팡 앱">
+                <div>
+                    <a href="https://play.google.com/store/apps/details?id=com.wecref.chaipang.chinese&hl=en&gl=kr"><img src="Resources/Img/source.png" alt="구글스토어"></a>
+                    <a href="https://apps.apple.com/de/app/chaipang-chinese/id1570555582?l=en"><img src="Resources/Img/source_1.png" alt="애플스토어"></a>
+                </div>
+            </div>
+            <div class="template">
+                <div class="tag">
+                    <img src="Resources/Img/kids_17.png" alt="태그 배경">
+                    <p class="kr NanumEB Font20Size">유튜브 - 차이팡 키즈</p>
+                </div>
+                <div>
+                    <img src="Resources/Img/Kr/kids_14.png" alt="차이팡 앱">
+                    <a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img src="Resources/Img/Kr/kids_15.png" alt="유튜브 버튼"></a>
+                </div>
+            </div>
+            <div class="template">
+                <div class="tag">
+                    <img src="Resources/Img/kids_17.png" alt="태그 배경">
+                    <p class="kr NanumEB Font20Size">서적 및 교재 출판</p>
+                </div>
+                <div>
+                    <img src="Resources/Img/Kr/kids_16-1.png" alt="차이팡 책">
+                    <img src="Resources/Img/Kr/kids_16-2.png" alt="차이팡 책">
+                    <img src="Resources/Img/Kr/kids_16-3.png" alt="차이팡 책">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="waveDecoDown"></div>
+      
+    <footer>
+        <ul class="link">
+            <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img src="./Resources/Img/kids_18.png"/></a></li>
+            <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/kids_19.png"/></a></li>
+            <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/kids_20.png"/></a></li>
+        </ul>
+        <div class="info">
+            <ul>
+                <li>Wecref Co., Ltd | CEO PARK, Jeongyeon</li>
+                <li>Business registration number | 281-81-01776</li>
+                <li>Terms & Conditions | Privacy Polic</li>
+            </ul>
+            <ul>
+                <li><img src="./Resources/Img/source_2.png"/></li>
+                <li>©2021 Wecref All Right Reserved.</li>
+            </ul>
+            <ul>
+                <li>Address | 4F, 562, Nonhyeon-ro,</li>
+                <li>Gangnam-gu, Seoul, Republic of Korea</li>
+                <li>Tel | +82 2 508 0710</li>
+                <li>E-mail | support@wecref.com, jyp@wecref.com</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

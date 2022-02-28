@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.NanumB {
+    font-family: "NanumSquareB";
+}
+.NanumR {
+    font-family: "NanumSquareR";
+}
+.NanumEB {
+    font-family: "NanumSquareEB";
+}
+.Font20Size {
+    /* font-size: 20px; */
+    font-size: .67em;
+    /* font-size: 100%; */
+}
+.Font25Size {
+    /* font-size: 25px; */
+    font-size: 1.5625em;
+}
+.Font30Size {
+    /* font-size: 30px; */
+    font-size: 1.875em;
+}
+.Font31Size {
+    /* font-size: 30px; */
+    font-size: 1.938em;
+}
+.Font33Size {
+    /* font-size: 33px; */
+    font-size: 2.0625em;
+}
+.Font35Size {
+    /* font-size: 35px; */
+    font-size: 2.1875em;
+}
+.Font40Size {
+    font-size: 2.5em;
+}
+.Font45Size {
+    /* font-size: 45px; */
+    font-size: 2.8125em;
+}
+.Font50Size {
+    /* font-size: 50px; */
+    font-size: 3.125em;
+}
+/**/
+.MarginZero{
+    margin: 0rem 0rem 0rem 0rem;
+}
+.PaddingZero{
+    padding: 0rem 0rem 0rem 0rem;
+}
+/**/
+.clicked {
+    color: #1ec8c8;
+}
+/**/

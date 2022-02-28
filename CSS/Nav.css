@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+nav {
+    width: auto;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+/**/
+nav .main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/**/
+nav .menu_icon {
+    width: 4em;
+    height: 4em;
+    filter: opacity(0.5) drop-shadow(0 0 0 red);
+    cursor: pointer;
+    display: none;
+}
+/**/
+nav .contents.active {
+    display: flex;
+}
+nav .contents{
+    width: 100%;
+    display: flex;
+    color: #6B6B6B;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.125em;
+}
+/**/
+nav .menus {
+    /* background-color: #f0ffff; */
+    display: flex;
+    align-items: center;
+}
+nav .menus li:not(:last-child) {
+    padding: 0em 1em 0em 0em;
+}
+nav .menus li:nth-child(-n+4):hover {
+    color: #ffd200;
+    cursor: pointer;
+}
+nav .menus li:not(:nth-child(-n+5)) a{
+    color: #6B6B6B;
+}
+nav .menus li:not(:nth-child(-n+5)) a:hover {
+    color: #ffd200;
+    cursor: pointer;
+}
+/**/
+nav .link {
+    background-color: #AFAFAF;
+    display: flex;
+    margin: 0em 1.5em;
+    padding: 0em .3em;
+    border-radius: 100em / 100em;
+    width: 140px;
+    height: 30px;
+    justify-content: center;
+    justify-content: space-around;
+}
+nav .link li{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+nav .link li:nth-child(2) {
+    padding: 0em .5em 0em .5em;
+}
+nav .link img {
+    display: flex;
+    cursor: pointer;
+    width: 20px;
+    height: auto;
+}
+/**/
+nav .lang {
+    /* background-color: rgb(226, 43, 104); */
+    display: flex;
+    align-items: center;
+}
+nav .lang li:nth-child(2) {
+    padding: 0em .5em 0em .5em;
+}
+nav .lang li:last-child {
+    padding-right: 1em;
+}
+nav .lang li:not(:nth-child(2)):hover {
+    color: #ffd200;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px)
+{
+    nav { 
+        flex-direction: column; 
+    }
+    nav .contents {
+        display: none;
+        flex-direction: column;
+        padding-top: 2em;
+    }
+    nav .menu_icon {
+        display: flex;
+    }
+    nav .link {
+        margin: 1em 0em;
+    }
+    nav .lang li:last-child {
+        padding-right: 0em;
+    }
+}
+@media screen and (max-width: 800px) {
+    nav .menus {
+        flex-direction: column;
+    }
+    nav .menus li:not(:last-child) {
+        padding: 0em 0em .3em 0em;
+    }
+}
