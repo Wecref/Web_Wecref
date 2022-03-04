@@ -15,10 +15,6 @@ function ClickCss(event, targets){
         event.target.classList.add("clicked");
     }
 }
-function OpenMenu(event){
-
-}
-
 export function InitMenu(targets){
     for (var i = 0; i < targets.length; i++){
         targets[i].addEventListener("click", (event)=>{
@@ -30,9 +26,7 @@ export function InitMenu(targets){
         });
     }
     targets[0].classList.add("clicked");
-
 }
-
 export function InitLanguageMenu(targets)
 {
     for (var i = 0; i < targets.length; i++){
@@ -44,7 +38,6 @@ export function InitLanguageMenu(targets)
         });
     }
 }
-
 export function InitMenuIcon(icon, layout){
     icon.addEventListener("click", (event) => {
         layout.classList.toggle("active");

@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
-
 footer {
     display: flex;
     flex-direction: column;
 }
-
 footer ul{
     margin: 0em;
     padding: 0em;
@@ -42,7 +40,6 @@ footer .info{
     padding: 1.5em 1.5em;
     background-color: #009b9b;
 }
-
 footer .info ul:nth-child(2) {
     font-size: 1.25em;
     display: flex;
@@ -66,7 +63,6 @@ footer .info ul:nth-child(2) li:last-child {
 footer .info ul:nth-child(2) img {
     width: 100%;
 }
-
 /**/
 @media screen and (max-width: 1300px) {
     footer .info {
