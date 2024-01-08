@@ -1,190 +1,195 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="Keywords" content="Chaipang, Chaipang Kids, Chaipang Chinese, Chaipang Math, Chaipang Addition, Chaipang Substraction, Chaipang Multiplication, Wecref, Education for kids, Education for children, Math for kids, arithmetic for kids, addition for kids, substraction for kids, multiplication for kids" />
-    <meta name="Description" content="Wecref Co., Ltd. aims to create a fantasy world for children around the world by creating and providing ‘highly informative, safe and interesting’ content. We are expanding our business areas, centering on brands such as Chaipang Kids, Wecref Games, and so on." />
-    
-    <meta http-equiv="Subject" content="Wecref Co., Ltd. aims to create a fantasy world for children around the world by creating and providing ‘highly informative, safe and interesting’ content. We are expanding our business areas, centering on brands such as Chaipang Kids, Wecref Games, and so on." />
-    <meta http-equiv="Title" content="Wecref" />
-    <meta http-equiv="Author" content="K.Moon" />
-    <meta http-equiv="publisher" content="Wecref" />
-    <meta http-equiv="Other Agent" content="K.Moon" />
-    <meta http-equiv="Generator" content="Visual Studio Code" />
-    <meta http-equiv="Reply-To" content="wecref.dev@gmail.com" />
-    <meta http-equiv="Email" content="wecref.dev@gmail.com" />
-    <meta http-equiv="Distribution" content="K.Moon" />
-    <meta http-equiv="Copyright" content="2022 Wecref Co., Ltd." />
-    <meta name="Date" content="2022-02-28T13:50:00+09:00" />
-    <meta http-equiv="Content-Script-Type" content="Text/javascript" />
-    <meta property="https://wecref.com/" content="website" />
-    <!-- 기본적 웹 설정 og 메타태그 -->
+    <meta name="Description"
+        content="Wecref Co., Ltd. aims to create a fantasy world for children around the world by creating and providing ‘highly informative, safe and interesting’ content. We are expanding our business areas, centering on brands such as Chaipang Kids, Wecref Games, and so on." />
+    <meta name="author" content="K.Moon" />
+    <meta name="publisher" content="Wecref" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="email" content="wecref.dev@gmail.com" />
+    <meta name="date" content="2022-02-28T13:50:00+09:00" />
+    <meta name="copyright" content="2022 Wecref Co., Ltd." />
+
+    <!-- Open Graph 메타태그 -->
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://wecref.com/" />
     <meta property="og:title" content="Wecref" />
-    <meta
-      property="og:image"
-      content="https://wecref.com/Resources/Img/share.png"
-    />
-    <meta
-      property="og:image:secure_url"
-      content="https://wecref.com/Resources/Img/share.png"
-    />
-    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image" content="https://wecref.com/Resources/Img/share.png" />
+    <meta property="og:description"
+        content="Wecref Co., Ltd. aims to create a fantasy world for children around the world by creating and providing ‘highly informative, safe and interesting’ content. We are expanding our business areas, centering on brands such as Chaipang Kids, Wecref Games, and so on." />
+    <meta property="og:site_name" content="Wecref" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="차이팡 공유 썸네일" />
-    <meta
-      property="og:description"
-      content="Wecref Co., Ltd. aims to create a fantasy world for children around the world by creating and providing ‘highly informative, safe and interesting’ content. We are expanding our business areas, centering on brands such as Chaipang Kids, Wecref Games, and so on."
-    />
-    <meta property="og:site_name" content="Wecref" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="ko_KR" />
 
     <link rel="shortcut icon" type="image/x-icon" href="Resources/Img/wecref_cion.png" />
     <title>Wecref</title>
 
-    <link rel="stylesheet" href="./main.css"/>
-    <script type="module" src="./main.js" defer="defer"></script>
+    <link rel="stylesheet" href="./main.css" />
+    <script type="module" src="./main.js"></script>
 </head>
+
 <body>
     <nav>
-        <div class="main">
-            <div class="logo">
-                <ul class="MarginZero PaddingZero">
-                    <li><img src="./Resources/Img/wecref_1.png"/></li>
-                </ul>
-            </div>
-            <img
-                class="menu_icon"
-                src="./Resources/Img/list_white_48dp.svg"
-                alt="메뉴 아이콘"
-            />
+        <div class="nav-header">
+            <a href="/" class="logo">
+                <img src="./Resources/Img/wecref_1.png" alt="위크리프 로고" />
+            </a>
+            <button class="menu-toggle" aria-label="메뉴 토글">
+                <img src="./Resources/Img/list_white_48dp.svg" alt="메뉴 아이콘" />
+            </button>
         </div>
-        <div class="contents NanumB Font20Size">
-            <ul class="menus MarginZero PaddingZero">            
-                <li data-href="#menu-main">About us</li>
-                <li data-href="#menu-kids">Chaipang Kids</li>
-                <li data-href="#menu-games">Wecref Games</li>
+        <div class="nav-body">
+            <ul class="nav-menus">
+                <li><a href="#menu-main">About us</a></li>
+                <li><a href="#menu-kids">Chaipang Kids</a></li>
+                <li><a href="#menu-games">Wecref Games</a></li>
             </ul>
-            <ul class="link">
-                <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img src="./Resources/Img/Math_4.png"/></a></li>
-                <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_5.png"/></a></li>
-                <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_6.png"/></a></li>
+            <ul class="social-links">
+                <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img
+                            src="./Resources/Img/Math_4.png" alt="유튜브" /></a></li>
+                <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_5.png"
+                            alt="인스타그램" /></a></li>
+                <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_6.png"
+                            alt="블로그" /></a>
+                </li>
             </ul>
-            <ul class="lang MarginZero PaddingZero">
-                <li data-lang="kr_index.html">KOR</li>
-                <li>|</li>
-                <li data-lang="en_index.html" class="clicked">ENG</li>
+            <ul class="language-selector">
+                <li><a href="kr_index.html">KOR</a></li>
+                <li><a href="en_index.html" class="active">ENG</a></li>
             </ul>
         </div>
     </nav>
-    <div id="contents-main"><img src="./Resources/Img/wecref_2.png" alt=""></div>
-    <div id="contents-area">
-        <span id="menu-main"></span>
-        <div class="contents">
-            <div class="title NanumEB Font45Size"><p>About us</p></div>
-            <div class="logo NanumB Font30Size">
-                <img class="one" src="./Resources/Img/wecref_3.png" alt="wecref logo">
-                <p><span class="TxtNeon">We cre</span>ate a <span class="TxtNeon">F</span>antasy World for Children around the World.</p>
+
+    <div id="contents-main"><img src="./Resources/Img/wecref_2.png" alt="위크리프 메인 이미지"></div>
+
+    <section id="menu-main"></section>
+
+    <div id="contents-area-first">
+        <div class="section-title">
+            <h1>About us</h1>
+        </div>
+        <div class="section-logo">
+            <img src="./Resources/Img/wecref_3.png" alt="wecref logo" class="logo-image">
+            <p><span class="highlight">We cre</span>ate a <span class="highlight">F</span>antasy World for Children
+                around the World</p>
+        </div>
+        <div class="section-info">
+            <p>
+                Wecref aims to create a fantasy world for children around the world, <br class="responsive-break">
+                both online and offline, by offering highly informative, safe, and exciting content.
+            </p>
+            <p>
+                Wecref is expanding its business scope, focusing on brands <br class="responsive-break">
+                like Chaipang Kids and Wecref Games.
+            </p>
+        </div>
+        <div class="newLine"></div>
+    </div>
+
+    <span id="menu-kids"></span>
+    <div id="contents-area-second">
+        <div class="section-title">
+            <h1>Chaipang Kids</h1>
+        </div>
+        <div class="section-logo">
+            <img src="./Resources/Img/01. website_Chaipangkids_BI.png" alt="차이팡 키즈 로고" class="logo-image">
+        </div>
+        <div class="section-info">
+            <p>
+                Chaipang Kids is a children's <span class="highlight">educational content</span><br
+                    class="responsive-break">
+                that children from all over the world can learn on their own<br class="responsive-break">
+                <span class="highlight">while playing, singing, and having fun</span> with Chaipang friends<br
+                    class="responsive-break">
+                in the Fantasy world of Chaipang.
+            </p>
+            <p>
+                Chaipang Kids is expanding<br class="responsive-break">
+                its educational content to include <span class="highlight">foreign languages,</span><br
+                    class="responsive-break">
+                <span class="highlight">math, art play, and safety education.</span>
+            </p>
+        </div>
+        <div class="link-area">
+            <div class="link">
+                <img src="Resources/Img/01. website_Chaipangkids_BI.png" alt="차이팡 키즈 로고">
+                <p class="title">Chaipang Kids</p>
+                <a href="https://chaipangkids.com/kr_index.html">Go to Website</a>
             </div>
-            <div class="info NanumR Font30Size">
-                <p>We aim to create <span class="TxtNeon">a fantasy world for children around the world</span>, both online and offline, 
-                    <br>by creating and providing 'highly informative, safe, and exciting' content.
-                </p>
-                <p>We are expanding our business areas, centering on brands 
-                    <br>such as <span class="TxtNeon">Chaipang Kids</span> and <span class="TxtNeon">Wecref Games</span> brands.
-                </p>
+            <div class="chars">
+                <img src="Resources/Img/wecref_7.png" alt="wecref character">
+                <img src="Resources/Img/wecref_8.png" alt="wecref character">
+                <img src="Resources/Img/wecref_9.png" alt="wecref character">
+                <img src="Resources/Img/wecref_10.png" alt="wecref character">
+                <img src="Resources/Img/wecref_11.png" alt="wecref character">
+                <img src="Resources/Img/wecref_12.png" alt="wecref character">
             </div>
         </div>
         <div class="newLine"></div>
-        <span id="menu-kids"></span>
-        <div class="contents">
-            <div class="title NanumEB Font45Size"><p>Chaipang Kids</p></div>
-            <div class="logo"><img class="two" src="./Resources/Img/wecref_4.png" alt="chaipang logo"></div>
-            <div class="info NanumR Font30Size">
-                <p><span class="TxtNeon">Chaipang Kids</span> is a <span class="TxtNeon">children's educational content</span> 
-                    <br>that children from all over the world can learn on their own 
-                    <br>while playing, singing, and having fun with <span class="TxtNeon">Chaipang friends</span> 
-                    <br>in the <span class="TxtNeon">Fantasy world of Chaipang.</span>
-                </p>
-                <p><span class="TxtNeon">With Chaipang Chinese</span> as our leading service,
-                    <br>we are expanding our educational contents such as 
-                    <br>Chaipang addition, subtraction, and multiplication.
-                </p>
-            </div>
-            <div class="link-area NanumR Font30Size">
-                <div class="link">
-                    <div>
-                        <img src="Resources/Img/wecref_5.png" alt="chaipang chinese logo">
-                        <p class="title">Chaipang Chinese</p>
-                        <a href="https://chinese.chaipangkids.com/en_index.html" class="NanumEB Font20Size">▶ Go to Website</a>
-                    </div>
-                    <div>
-                        <img src="Resources/Img/wecref_4.png" alt="chaipang kids logo">
-                        <p class="title">Chaipang Kids</p>
-                        <a href="https://chaipangkids.com/en_index.html" class="NanumEB Font20Size">▶ Go to Website</a>
-                    </div>
-                </div>
-                <div class="characters one">
-                    <img src="Resources/Img/wecref_7.png" alt="wecref character">
-                    <img src="Resources/Img/wecref_8.png" alt="wecref character">
-                    <img src="Resources/Img/wecref_9.png" alt="wecref character">
-                    <img src="Resources/Img/wecref_10.png" alt="wecref character">
-                    <img src="Resources/Img/wecref_11.png" alt="wecref character">
-                    <img src="Resources/Img/wecref_12.png" alt="wecref character">
-                </div>
-            </div>
+    </div>
+
+    <span id="menu-games"></span>
+    <div id="contents-area-second">
+        <div class="section-title">
+            <h1>Wecref Games</h1>
         </div>
-        <div class="newLine"></div>
-        <span id="menu-games"></span>
-        <div class="contents">
-            <div class="title NanumEB Font45Size"><p>Wecref Games</p></div>
-            <div class="logo"><img class="three" src="./Resources/Img/wecref_13.png" alt="wecref games logo"></div>
-            <div class="info NanumR Font30Size">
-                <p>Wecref Games develops games that are safe, interesting, and fun to 
-                    <br>play with lovely characters created by Wecref.
-                </p>
+        <div class="section-logo">
+            <img src="./Resources/Img/wecref_13.png" alt="차이팡 키즈 로고" class="logo-image">
+        </div>
+        <div class="section-info">
+            <p>
+                Wecref Games develops safe, engaging, and enjoyable games<br class="responsive-break">
+                that showcase charming characters created by Wecref
+            </p>
+        </div>
+        <div class="link-area">
+            <div class="link">
+                <img src="Resources/Img/wecref_14.png" alt="차이팡 키즈 로고">
+                <p class="title">Wecref Games</p>
+                <a href="https://games.wecref.com/">Go to Website</a>
             </div>
-            <div class="link-area NanumR Font30Size">
-                <div class="link">
-                    <div>
-                        <img src="Resources/Img/wecref_14.png" alt="chaipang chinese logo">
-                        <p class="title">Wecref Games</p>
-                        <a href="https://games.wecref.com/" class="NanumEB Font20Size">▶ Go to Website</a>
-                    </div>
-                </div>
-                <div class="characters two">
-                    <img src="Resources/Img/wecref_15.png" alt="wecref character">
-                </div>
+            <div class="charsV2">
+                <img src="Resources/Img/wecref_15.png" alt="wecref character">
             </div>
         </div>
     </div>
+
     <div id="waveDecoDown"></div>
+
     <footer>
-        <ul class="link">
-            <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img src="./Resources/Img/wecref_16.png"/></a></li>
-            <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/wecref_17.png"/></a></li>
-            <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/wecref_18.png"/></a></li>
+        <ul class="footer-links">
+            <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img
+                        src="./Resources/Img/wecref_16.png" alt="유튜브 채널" /></a></li>
+            <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/wecref_17.png"
+                        alt="인스타그램 페이지" /></a></li>
+            <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/wecref_18.png"
+                        alt="네이버 블로그" /></a>
+            </li>
         </ul>
-        <div class="info">
-            <ul>
+        <div class="footer-info">
+            <ul class="info-list">
                 <li>Wecref Co., Ltd | CEO PARK, Jeongyeon</li>
                 <li>Business registration number | 281-81-01776</li>
                 <li>Terms & Conditions | Privacy Policy</li>
             </ul>
-            <ul>
-                <li><img src="./Resources/Img/wecref_19.png"/></li>
+            <ul class="info-list">
+                <li><img src="./Resources/Img/wecref_19.png" alt="위크리프 로고" /></li>
                 <li>©2021 Wecref All Right Reserved.</li>
             </ul>
-            <ul>
-                <li class="address"><p>Address&nbsp;|&nbsp;</p><p>302,555,Samseong-ro,Gangnam-gu,<br>Seoul,Republic of Korea</p></li>
+            <ul class="info-list">
+                <li>Address | 302,555, Samseong-ro,Gangnam-gu, <br class="responsive-break">Seoul,Republic of Korea</li>
                 <li>Tel | +82 2 508 0710</li>
                 <li>E-mail | support@wecref.com, jyp@wecref.com</li>
             </ul>
         </div>
     </footer>
+
 </body>
+
 </html>

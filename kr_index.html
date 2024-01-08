@@ -1,136 +1,124 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="Keywords"
-        content="차이팡, 차이팡 키즈, 차이팡 중국어, 차이팡 수학, 차이팡 덧셈, 차이팡 뺄셈, 차이팡 구구단, 위크리프, 유아 교육, 어린이 교육, 어린이 중국어, 어린이 수학, 어린이 덧셈, 어린이 뺄셈, 어린이 곱셈, 어린이 구구단" />
     <meta name="Description"
         content="(주)위크리프는 안전하고 유익한 콘텐츠를 제작하여, 전 세계 어린이들을 위한 환상의 세계를 만듭니다. 차이팡 중국어를 중심으로, 차이팡 키즈, 위크리프 게임즈 등을 운영하고 있습니다." />
+    <meta name="author" content="K.Moon" />
+    <meta name="publisher" content="Wecref" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="email" content="wecref.dev@gmail.com" />
+    <meta name="date" content="2022-02-28T13:50:00+09:00" />
+    <meta name="copyright" content="2022 Wecref Co., Ltd." />
 
-    <meta http-equiv="Subject"
-        content="(주)위크리프는 안전하고 유익한 콘텐츠를 제작하여, 전 세계 어린이들을 위한 환상의 세계를 만듭니다. 차이팡 중국어를 중심으로, 차이팡 키즈, 위크리프 게임즈 등을 운영하고 있습니다." />
-    <meta http-equiv="Title" content="Wecref" />
-    <meta http-equiv="Author" content="K.Moon" />
-    <meta http-equiv="publisher" content="Wecref" />
-    <meta http-equiv="Other Agent" content="K.Moon" />
-    <meta http-equiv="Generator" content="Visual Studio Code" />
-    <meta http-equiv="Reply-To" content="wecref.dev@gmail.com" />
-    <meta http-equiv="Email" content="wecref.dev@gmail.com" />
-    <meta http-equiv="Distribution" content="K.Moon" />
-    <meta http-equiv="Copyright" content="2022 Wecref Co., Ltd." />
-    <meta name="Date" content="2022-02-28T13:50:00+09:00" />
-    <meta http-equiv="Content-Script-Type" content="Text/javascript" />
-    <meta property="https://wecref.com/" content="website" />
-    <!-- 기본적 웹 설정 og 메타태그 -->
+    <!-- Open Graph 메타태그 -->
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://wecref.com/" />
     <meta property="og:title" content="Wecref" />
     <meta property="og:image" content="https://wecref.com/Resources/Img/share.png" />
-    <meta property="og:image:secure_url" content="https://wecref.com/Resources/Img/share.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="차이팡 공유 썸네일" />
     <meta property="og:description"
         content="(주)위크리프는 안전하고 유익한 콘텐츠를 제작하여, 전 세계 어린이들을 위한 환상의 세계를 만듭니다. 차이팡 중국어를 중심으로, 차이팡 키즈, 위크리프 게임즈 등을 운영하고 있습니다." />
     <meta property="og:site_name" content="Wecref" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="차이팡 공유 썸네일" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="./Resources/Img/wecref_cion.png" />
+    <link rel="shortcut icon" type="image/png" href="./Resources/Img/wecref_cion.png" />
     <title>위크리프</title>
 
     <link rel="stylesheet" href="./main.css" />
-    <script type="module" src="./main.js" defer="defer"></script>
+    <script type="module" src="./main.js"></script>
 </head>
 
 <body>
-    <nav>
-        <div class="main">
-            <div class="logo">
-                <ul class="MarginZero PaddingZero">
-                    <li><img src="./Resources/Img/wecref_1.png" /></li>
+
+    <body>
+
+        <nav>
+            <div class="nav-header">
+                <a href="/" class="logo">
+                    <img src="./Resources/Img/wecref_1.png" alt="위크리프 로고" />
+                </a>
+                <button class="menu-toggle" aria-label="메뉴 토글">
+                    <img src="./Resources/Img/list_white_48dp.svg" alt="메뉴 아이콘" />
+                </button>
+            </div>
+            <div class="nav-body">
+                <ul class="nav-menus">
+                    <li><a href="#menu-main">회사 소개</a></li>
+                    <li><a href="#menu-kids">차이팡 키즈</a></li>
+                    <li><a href="#menu-games">위크리프 게임즈</a></li>
+                </ul>
+                <ul class="social-links">
+                    <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img
+                                src="./Resources/Img/Math_4.png" alt="유튜브" /></a></li>
+                    <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_5.png"
+                                alt="인스타그램" /></a></li>
+                    <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_6.png"
+                                alt="블로그" /></a></li>
+                </ul>
+                <ul class="language-selector">
+                    <li><a href="kr_index.html" class="active">KOR</a></li>
+                    <li><a href="en_index.html">ENG</a></li>
                 </ul>
             </div>
-            <img class="menu_icon" src="./Resources/Img/list_white_48dp.svg" alt="메뉴 아이콘" />
-        </div>
-        <div class="contents NanumB Font20Size">
-            <ul class="menus MarginZero PaddingZero">
-                <li data-href="#menu-main">회사 소개</li>
-                <li data-href="#menu-kids">차이팡 키즈</li>
-                <li data-href="#menu-games">위크리프 게임즈</li>
-            </ul>
-            <ul class="link">
-                <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img
-                            src="./Resources/Img/Math_4.png" /></a></li>
-                <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_5.png" /></a></li>
-                <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_6.png" /></a></li>
-            </ul>
-            <ul class="lang MarginZero PaddingZero">
-                <li data-lang="kr_index.html" class="clicked">KOR</li>
-                <li>|</li>
-                <li data-lang="en_index.html">ENG</li>
-            </ul>
-        </div>
-    </nav>
-    <div id="contents-main"><img src="./Resources/Img/wecref_2.png" alt=""></div>
-    <div id="contents-area">
-        <span id="menu-main"></span>
-        <div class="contents">
-            <div class="title NanumEB Font45Size">
-                <p>회사 소개</p>
+        </nav>
+
+        <div id="contents-main"><img src="./Resources/Img/wecref_2.png" alt="위크리프 메인 이미지"></div>
+
+        <section id="menu-main"></section>
+
+        <div id="contents-area-first">
+            <div class="section-title">
+                <h1>회사 소개</h1>
             </div>
-            <div class="logo NanumB Font30Size">
-                <img class="one" src="./Resources/Img/wecref_3.png" alt="wecref logo">
-                <p><span class="TxtNeon">We cre</span>ate a <span class="TxtNeon">F</span>antasy World for Children
-                    around the World.</p>
+            <div class="section-logo">
+                <img src="./Resources/Img/wecref_3.png" alt="wecref logo" class="logo-image">
+                <p><span class="highlight">We cre</span>ate a <span class="highlight">F</span>antasy World for Children
+                    around the World</p>
             </div>
-            <div class="info NanumR Font30Size">
-                <p>㈜위크리프는 <span class="TxtNeon">안전하고 유익하면서도 재미있는</span>
-                    <br>콘텐츠를 개발 및 제작합니다.
-                    <br>온라인과 오프라인 환경 모두에서 <span class="TxtNeon">전 세계 어린이들을 위한</span>
-                    <br><span class="TxtNeon">환상의 세계</span>를 만들기 위해 노력합니다.
+            <div class="section-info">
+                <p>㈜위크리프는 <span class="highlight">안전하고 유익하면서도 재미있는</span> 콘텐츠를 개발 및 제작합니다.<br class="responsive-break">
+                    온라인과 오프라인 환경 모두에서 <span class="highlight">전 세계 어린이들을 위한<br class="responsive-break"> 환상의 세계</span>를
+                    만들기 위해 노력합니다.
                 </p>
-                <p><span class="TxtNeon">차이팡 키즈</span>, <span class="TxtNeon">위크리프 게임즈</span> 등의 브랜드를 중심으로
-                    <br>사업 영역을 확장해 나가고 있습니다.
+                <p><span class="highlight">차이팡 키즈, 위크리프 게임즈</span> 등의 브랜드를 중심으로<br class="responsive-break"> 사업 영역을 확장해
+                    나가고 있습니다.
                 </p>
             </div>
+            <div class="newLine"></div>
         </div>
-        <div class="newLine"></div>
+
         <span id="menu-kids"></span>
-        <div class="contents">
-            <div class="title NanumEB Font45Size">
-                <p>차이팡 키즈</p>
+        <div id="contents-area-second">
+            <div class="section-title">
+                <h1>차이팡 키즈</h1>
             </div>
-            <div class="logo"><img class="two" src="./Resources/Img/wecref_4.png" alt="chaipang logo"></div>
-            <div class="info NanumR Font30Size">
-                <p>차이팡 키즈는 어린이들이 <span class="TxtNeon">차이팡 프렌즈 캐릭터</span>와 함께
-                    <br><span class="TxtNeon">차이팡 환상의 세계</span>에서 신나게 놀고 노래하고 즐기다 보면
-                    <br>자연스럽게 익힐 수 있는 <span class="TxtNeon">어린이 교육 콘텐츠</span>입니다.
+            <div class="section-logo">
+                <img src="./Resources/Img/01. website_Chaipangkids_BI.png" alt="차이팡 키즈 로고" class="logo-image">
+            </div>
+            <div class="section-info">
+                <p>차이팡 키즈는 어린이들이 <span class="highlight">차이팡 프렌즈 캐릭터</span>와 함께<br class="responsive-break">
+                    <span class="highlight">차이팡 환상의 세계</span>에서 신나게 놀고 노래하고 즐기다 보면<br class="responsive-break">
+                    자연스럽게 익힐 수 있는 <span class="highlight">어린이 교육 콘텐츠</span>입니다.
                 </p>
-                <p>차이팡 중국어, 수학, 덧셈, 뺄셈, 구구단 등
-                    <br><span class="TxtNeon">외국어 및 수학</span>뿐만 아니라,
-                    <br>차이팡 한글, 영어, 색칠놀이, 안전교육 등으로
-                    <br><span class="TxtNeon">교육 콘텐츠를 확장</span>해 나가고 있습니다.
+                <p>차이팡 중국어, 수학, 덧셈, 뺄셈, 구구단 등<br class="responsive-break">
+                    <span class="highlight">외국어 및 수학</span>뿐만 아니라,<br class="responsive-break">
+                    차이팡 한글, 영어, 색칠놀이, 안전교육 등으로<br class="responsive-break">
+                    <span class="highlight">교육 콘텐츠를 확장</span>해 나가고 있습니다.<br class="responsive-break">
                 </p>
             </div>
-            <div class="link-area NanumR Font30Size">
+            <div class="link-area">
                 <div class="link">
-                    <!-- <div>
-                        <img src="Resources/Img/wecref_5.png" alt="chaipang chinese logo">
-                        <p class="title">차이팡 중국어</p>
-                        <a href="https://chinese.chaipangkids.com/kr_index.html" class="NanumEB Font20Size">▶ 홈페이지
-                            바로가기</a>
-                    </div> -->
-                    <div>
-                        <img src="Resources/Img/wecref_4.png" alt="chaipang kids logo">
-                        <p class="title">차이팡 키즈</p>
-                        <a href="https://chaipangkids.com/kr_index.html" class="NanumEB Font20Size">▶ 홈페이지 바로가기</a>
-                    </div>
+                    <img src="Resources/Img/01. website_Chaipangkids_BI.png" alt="차이팡 키즈 로고">
+                    <p class="title">차이팡 키즈</p>
+                    <a href="https://chaipangkids.com/kr_index.html">홈페이지 바로가기</a>
                 </div>
-                <div class="characters one">
+                <div class="chars">
                     <img src="Resources/Img/wecref_7.png" alt="wecref character">
                     <img src="Resources/Img/wecref_8.png" alt="wecref character">
                     <img src="Resources/Img/wecref_9.png" alt="wecref character">
@@ -139,60 +127,69 @@
                     <img src="Resources/Img/wecref_12.png" alt="wecref character">
                 </div>
             </div>
+            <div class="newLine"></div>
         </div>
-        <div class="newLine"></div>
+
         <span id="menu-games"></span>
-        <div class="contents">
-            <div class="title NanumEB Font45Size">
-                <p>위크리프 게임즈</p>
+        <div id="contents-area-second">
+            <div class="section-title">
+                <h1>위크리프 게임즈</h1>
             </div>
-            <div class="logo"><img class="three" src="./Resources/Img/wecref_13.png" alt="wecref games logo"></div>
-            <div class="info NanumR Font30Size">
-                <p>위크리프 게임즈는 귀여운 위크리프 캐릭터들과 함께
-                    <br>건전하면서도 재미있게 즐길 수 있는 게임을 개발합니다.
+            <div class="section-logo">
+                <img src="./Resources/Img/wecref_13.png" alt="차이팡 키즈 로고" class="logo-image">
+            </div>
+            <div class="section-info">
+                <p>위크리프 게임즈는 귀여운 위크리프 캐릭터들과 함께<br class="responsive-break">
+                    건전하면서도 재미있게 즐길 수 있는 게임을 개발합니다.
                 </p>
             </div>
-            <div class="link-area NanumR Font30Size">
+            <div class="link-area">
                 <div class="link">
-                    <div>
-                        <img src="Resources/Img/wecref_14.png" alt="chaipang chinese logo">
-                        <p class="title">위크리프 게임즈</p>
-                        <a href="https://games.wecref.com/" class="NanumEB Font20Size">▶ 홈페이지 바로가기</a>
-                    </div>
+                    <img src="Resources/Img/wecref_14.png" alt="차이팡 키즈 로고">
+                    <p class="title">위크리프 게임즈</p>
+                    <a href="https://games.wecref.com/">홈페이지 바로가기</a>
                 </div>
-                <div class="characters two">
+                <div class="charsV2">
                     <img src="Resources/Img/wecref_15.png" alt="wecref character">
                 </div>
             </div>
         </div>
-    </div>
-    <div id="waveDecoDown"></div>
-    <footer>
-        <ul class="link">
-            <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img
-                        src="./Resources/Img/wecref_16.png" /></a></li>
-            <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/wecref_17.png" /></a></li>
-            <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/wecref_18.png" /></a></li>
-        </ul>
-        <div class="info">
-            <ul>
-                <li>주식회사 위크리프 | 대표 박정연</li>
-                <li>사업자등록번호 | 281-81-01776</li>
-                <li>통신판매업신고번호 | 2021-서울강남-01386</li>
-                <li>이용약관 | 개인정보처리방침</li>
+
+        <div id="waveDecoDown"></div>
+
+        <footer>
+            <ul class="footer-links">
+                <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img
+                            src="./Resources/Img/wecref_16.png" alt="유튜브 채널" /></a></li>
+                <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/wecref_17.png"
+                            alt="인스타그램 페이지" /></a></li>
+                <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/wecref_18.png"
+                            alt="네이버 블로그" /></a>
+                </li>
             </ul>
-            <ul>
-                <li><img src="./Resources/Img/wecref_19.png" /></li>
-                <li>©2021 Wecref All Right Reserved.</li>
-            </ul>
-            <ul>
-                <li>주소 | 서울특별시 강남구 삼성로 555, 302호</li>
-                <li>대표 전화 | 508-0710</li>
-                <li>이메일 | support@wecref.com, jyp@wecref.com</li>
-                <li>카카오톡 문의하기 | @차이팡 키즈</li>
-            </ul>
-        </div>
-    </footer>
+            <div class="footer-info">
+                <ul class="info-list">
+                    <li>주식회사 위크리프 | 대표 박정연</li>
+                    <li>사업자등록번호 | 281-81-01776</li>
+                    <li>통신판매업신고번호 | 2021-서울강남-01386</li>
+                    <li>이용약관 | 개인정보처리방침</li>
+                </ul>
+                <ul class="info-list">
+                    <li><img src="./Resources/Img/wecref_19.png" alt="위크리프 로고" /></li>
+                    <li>©2021 Wecref All Right Reserved.</li>
+                </ul>
+                <ul class="info-list">
+                    <li>주소 | 서울특별시 강남구 삼성로 555, 302호</li>
+                    <li>대표 전화 | 508-0710</li>
+                    <li>이메일 | support@wecref.com, jyp@wecref.com</li>
+                    <li>카카오톡 문의하기 | @차이팡 키즈</li>
+                </ul>
+            </div>
+        </footer>
+
+    </body>
+
+
 </body>
 
 </html>

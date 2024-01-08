@@ -1,6 +1,7 @@
-import * as nav from './JS/Project/Nav.js'
-import * as lang from './JS/Module/Language.js'
+import * as nav from './JS/Project/Nav.js';
 
-nav.InitMenu(document.querySelectorAll('nav .menus li'));
-nav.InitMenuIcon(document.querySelector('nav .menu_icon'), document.querySelector('nav .contents'));
-nav.InitLanguageMenu(document.querySelectorAll('nav .lang li:not(:nth-child(2))'));
+document.addEventListener('DOMContentLoaded', () => {
+    nav.InitMenu(document.querySelectorAll('nav .nav-menus a')); // li 대신 a 태그에 이벤트 리스너를 추가합니다.
+    nav.InitMenuIcon(document.querySelector('.menu-toggle'), document.querySelector('.nav-body'));
+    nav.InitLanguageMenu(document.querySelectorAll('.language-selector a')); // li 대신 a 태그에 이벤트 리스너를 추가합니다.
+});
