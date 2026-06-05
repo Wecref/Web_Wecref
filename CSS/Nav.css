@@ -139,12 +139,21 @@ nav {
         width: 110%;
         background-color: #fff;
 
-        display: none;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
         flex-direction: column;
-        padding: 1em 0;
+        padding: 0 1em;
 
+        transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 
         font-size: 1.5em;
+    }
+
+    .nav-body.active {
+        max-height: 500px;
+        opacity: 1;
+        padding: 1em;
     }
 
     .nav-menus li a,
