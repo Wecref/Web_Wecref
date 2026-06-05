@@ -37,21 +37,13 @@
 #contents-area-first .section-info,
 #contents-area-second .section-info {
     font-family: "NanumSquareR";
-    font-size: 1.333em;
+    font-size: 1em;
     color: #686868;
-    width: 60%;
+    width: 100%;
     text-align: center;
     line-height: 1.7em;
 
     margin-top: 2em;
-}
-
-#contents-area-first .section-info {
-    width: 85%;
-}
-
-#contents-area-second .section-info {
-    width: 100%;
 }
 
 #contents-area-first .section-info p,
