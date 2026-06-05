@@ -4,7 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <script type="module" src="./routing.js"></script>
+    <script type="module">
+      import { isKorea } from './JS/Module/Language.js';
+      isKorea() ? window.location.replace("kr_index.html") : window.location.replace("en_index.html");
+    </script>
 </head>
 <body>
 </body>
