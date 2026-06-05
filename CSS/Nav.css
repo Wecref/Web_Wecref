@@ -15,7 +15,7 @@ nav {
 
     font-family: "NanumSquareB";
 
-    padding: 1em;
+    padding: .1em 1em;
 }
 
 .logo img {
@@ -42,7 +42,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     font-size: 1.125em;
-    color: #6B6B6B;
+    color: #686868;
 }
 
 .nav-body.active {
@@ -75,7 +75,7 @@ nav {
 .nav-menus li a:hover,
 .social-links li a:hover,
 .language-selector li a:hover {
-    color: #ffd200;
+    color: #ff5a96;
 }
 
 .social-links {
@@ -148,7 +148,7 @@ nav {
 
     .nav-body.active {
         display: flex;
-        padding: 1em;
+    padding: .1em 1em;
     }
 
     .nav-menus li a,
