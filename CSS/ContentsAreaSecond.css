@@ -58,9 +58,3 @@
     width: 21em;
 }
 
-@media screen and (max-width: 425px) {
-
-    #contents-area-first br.responsive-break {
-        display: none;
-    }
-}

@@ -6,10 +6,15 @@ function ClickCss(target, targets) {
 export function InitMenu(targets) {
     targets.forEach(target => {
         target.addEventListener('click', event => {
-            event.preventDefault(); // 페이지가 새로 고침되지 않도록 기본 동작을 방지합니다.
+            event.preventDefault();
             ClickCss(event.currentTarget, targets);
-            if (event.currentTarget.href) {
-                window.open(event.currentTarget.href, "_self");
+            const href = event.currentTarget.getAttribute('href');
+            if (!href) return;
+            if (href.startsWith('#')) {
+                const targetEl = document.querySelector(href);
+                if (targetEl) targetEl.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                window.location.href = href;
             }
         });
     });

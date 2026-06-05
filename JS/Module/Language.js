@@ -3,7 +3,7 @@ export function getLanguage() {
 };
 
 export function isKorea() {
-    let currentLang = getLanguage().substr(0, 2);
+    let currentLang = getLanguage().slice(0, 2);
     if (currentLang == "ko"){
         return true;
     } 
