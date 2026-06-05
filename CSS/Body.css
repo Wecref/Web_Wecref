@@ -23,7 +23,11 @@ body a {
 }
 
 .highlight {
-    color: #00c8c8;
+    color: #1ec8c8;
+}
+
+.highlight-pink {
+    color: #ff5a96;
 }
 
 .newLine {

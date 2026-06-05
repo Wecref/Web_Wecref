@@ -14,7 +14,14 @@
     margin: 2em 0em;
 
     font-family: "NanumSquareEB";
+    font-size: 2em;
+    color: #6b6b6b;
+}
+
+#contents-area-first .section-title h1,
+#contents-area-second .section-title h1 {
     font-size: 1em;
+    margin: 0;
 }
 
 #contents-area-first .section-logo,
@@ -30,11 +37,21 @@
 #contents-area-first .section-info,
 #contents-area-second .section-info {
     font-family: "NanumSquareR";
+    font-size: 1.333em;
+    color: #686868;
     width: 60%;
     text-align: center;
     line-height: 1.7em;
 
     margin-top: 2em;
+}
+
+#contents-area-first .section-info {
+    width: 85%;
+}
+
+#contents-area-second .section-info {
+    width: 85%;
 }
 
 #contents-area-first .section-info p,
