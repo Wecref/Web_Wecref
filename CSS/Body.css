@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
-html,
+html {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    font-size: clamp(10px, 1.5vw + 1.2px, 30px);
+}
+
 body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    font-size: 30px;
     word-break: keep-all;
 }
 
@@ -42,40 +47,12 @@ div#waveDecoDown {
 }
 
 @media screen and (max-width: 1440px) {
-
-    html,
-    body {
-        font-size: 20px;
-    }
-
     div#waveDecoDown {
         height: 2.5em;
     }
 }
 
-@media screen and (max-width: 1024px) {
-
-    html,
-    body {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    html,
-    body {
-        font-size: 12px;
-    }
-}
-
 @media screen and (max-width: 425px) {
-
-    html,
-    body {
-        font-size: 10px;
-    }
-
     div#waveDecoDown {
         height: 2em;
     }

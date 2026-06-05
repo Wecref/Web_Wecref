@@ -1,17 +1,10 @@
 @charset "UTF-8";
 
 #contents-area-first .section-logo img {
-    max-width: 441px;
-    width: 15em;
+    max-width: 15em;
+    width: 100%;
 }
 
 #contents-area-first .section-logo p {
     font-size: 1em;
-}
-
-@media screen and (max-width: 425px) {
-
-    #contents-area-first br.responsive-break {
-        display: none;
-    }
 }

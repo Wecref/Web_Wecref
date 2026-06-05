@@ -139,20 +139,15 @@ nav {
         width: 110%;
         background-color: #fff;
 
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
+        display: none;
         flex-direction: column;
-        padding: 0 1em;
-
-        transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+        padding: 0;
 
         font-size: 1.5em;
     }
 
     .nav-body.active {
-        max-height: 500px;
-        opacity: 1;
+        display: flex;
         padding: 1em;
     }
 

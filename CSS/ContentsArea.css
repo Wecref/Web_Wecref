@@ -37,6 +37,16 @@
     margin-top: 2em;
 }
 
+#contents-area-first .section-info p,
+#contents-area-second .section-info p {
+    margin: 0;
+}
+
+#contents-area-first .section-info p.section-gap,
+#contents-area-second .section-info p.section-gap {
+    margin-top: 1em;
+}
+
 @media screen and (max-width: 768px) {
 
     #contents-area-first .section-info,

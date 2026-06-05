@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 #contents-area-second .section-logo img {
-    max-width: 396px;
-    width: 14em;
+    max-width: 14em;
+    width: 100%;
 }
 
 #contents-area-second .link-area {
@@ -35,8 +35,8 @@
 }
 
 #contents-area-second .link-area .link img {
-    max-width: 150px;
-    width: 5em;
+    max-width: 5em;
+    width: 100%;
 }
 
 #contents-area-second .link-area .chars {
@@ -48,13 +48,12 @@
 }
 
 #contents-area-second .link-area .chars img {
-    max-width: 128px;
-    width: 4.5em;
-
+    max-width: 4.5em;
+    width: 100%;
 }
 
 #contents-area-second .link-area .charsV2 img {
-    max-width: 609px;
-    width: 21em;
+    max-width: 21em;
+    width: 100%;
 }
 
