@@ -55,6 +55,10 @@ footer .footer-info .info-list:nth-child(1) li span:first-child {
     flex: 0 0 8.5em;
 }
 
+html[lang="en"] footer .footer-info .info-list:nth-child(1) li span:first-child {
+    flex: 0 0 14.5em;
+}
+
 footer .footer-info .info-list:nth-child(3) li {
     display: flex;
     margin-bottom: .3em;
@@ -62,6 +66,19 @@ footer .footer-info .info-list:nth-child(3) li {
 
 footer .footer-info .info-list:nth-child(3) li span:first-child {
     flex: 0 0 8em;
+}
+
+html[lang="en"] footer .footer-info .info-list:nth-child(3) li {
+    display: flex;
+    margin-bottom: .3em;
+}
+
+html[lang="en"] footer .footer-info .info-list:nth-child(3) li span:first-child {
+    flex: 0 0 5em;
+}
+
+html[lang="en"] .pipe {
+    color: transparent;
 }
 
 footer .footer-info .info-list:nth-child(2) {
