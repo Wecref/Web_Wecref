@@ -72,6 +72,10 @@ nav {
     font-size: .6em;
 }
 
+.social-links li a {
+    padding: .35em .5em;
+}
+
 .nav-menus li a:hover,
 .social-links li a:hover,
 .language-selector li a:hover {
@@ -81,17 +85,29 @@ nav {
 .social-links {
     background-color: #AFAFAF;
     border-radius: 100em;
-    width: 4em;
-    height: 1em;
+    width: fit-content;
+    height: auto;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    gap: .3em;
 
     margin: 0 .5em;
-    padding: 0em .3em;
+    padding: 0 .4em;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
 }
 
 .social-links a {
     display: flex;
+    align-items: center;
+}
+
+.social-links picture {
+    display: flex;
+    align-items: center;
 }
 
 .social-links img {
@@ -118,6 +134,11 @@ nav {
 @media screen and (max-width: 1024px) {
     nav {
         flex-direction: column;
+        justify-content: center;
+    }
+
+    nav:has(.nav-body.active) {
+        justify-content: flex-start;
     }
 
     .nav-header {
@@ -151,6 +172,10 @@ nav {
         padding: .1em 1em;
     }
 
+    .social-links {
+        padding: 0 .6em;
+    }
+
     .nav-menus li a,
     .social-links li a,
     .language-selector li a {
@@ -160,12 +185,14 @@ nav {
 
 @media screen and (max-width: 768px) {
     nav {
-        height: 5em;
+        height: auto;
+        min-height: 3em;
     }
 }
 
 @media screen and (max-width: 425px) {
     nav {
-        height: 6em;
+        height: auto;
+        min-height: 3em;
     }
 }
