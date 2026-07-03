@@ -56,18 +56,23 @@ footer .footer-info .info-list:nth-child(3) li {
 
 footer .footer-info .info-list:nth-child(1) li .label,
 footer .footer-info .info-list:nth-child(3) li .label {
-    flex: 0 0 clamp(110px, 18vw, 170px);
-    text-align: right;
-    padding-right: .6em;
+    flex: 0 0 clamp(60px, 14vw, 178px);
+    min-width: 0;
 }
 
 html[lang="en"] footer .footer-info .info-list:nth-child(1) li .label {
-    flex: 0 0 clamp(140px, 22vw, 300px);
+    flex: 0 0 clamp(130px, 20vw, 290px);
+    min-width: 0;
+}
+
+html[lang="en"] footer .footer-info .info-list:nth-child(3) li .label {
+    flex: 0 0 clamp(70px, 12vw, 89px);
+    min-width: 0;
 }
 
 footer .footer-info .info-list:nth-child(1) li .sep,
 footer .footer-info .info-list:nth-child(3) li .sep {
-    padding: 0 .4em;
+    padding-right: .35em;
 }
 
 footer .footer-info .info-list:nth-child(2) {
@@ -118,6 +123,19 @@ footer .footer-info .info-list:nth-child(2) img {
 
     html[lang="ko"] footer .footer-info .info-list:nth-child(1) {
         padding-right: 8em;
+    }
+
+    footer .footer-info .info-list:nth-child(1) li .label,
+    footer .footer-info .info-list:nth-child(3) li .label {
+        flex: 0 0 clamp(60px, 14vw, 135px);
+    }
+
+    html[lang="en"] footer .footer-info .info-list:nth-child(1) li .label {
+        flex: 0 0 clamp(97px, 20vw, 97px);
+    }
+
+    html[lang="en"] footer .footer-info .info-list:nth-child(3) li .label {
+        flex: 0 0 clamp(15px, 10vw, 51px);
     }
 }
 
