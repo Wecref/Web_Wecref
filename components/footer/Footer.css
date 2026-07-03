@@ -104,3 +104,31 @@ footer .footer-info .info-list:nth-child(2) li {
     align-items: center;
     white-space: nowrap;
 }
+
+@media screen and (max-width: 525px) {
+    footer .footer-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-info .info-list {
+        flex: none;
+        width: fit-content;
+    }
+
+    footer .footer-info .info-list:nth-child(1) {
+        order: 1;
+    }
+
+    footer .footer-info .info-list:nth-child(2) {
+        order: 0;
+    }
+
+    footer .footer-info .info-list:nth-child(3) {
+        order: 2;
+    }
+
+    html[lang="ko"] footer .footer-info .info-list:nth-child(1) {
+        padding-right: 6em;
+    }
+}
