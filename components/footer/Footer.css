@@ -105,40 +105,61 @@ footer .footer-info .info-list:nth-child(2) li {
     white-space: nowrap;
 }
 
+.footer-col {
+    display: none;
+}
+
 @media screen and (max-width: 525px) {
-    footer .footer-info {
+    footer .footer-row {
+        display: none;
+    }
+
+    .footer-col {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 1.5em;
+        padding: 1em 1.5em;
+        background-color: var(--color-footer-dark);
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    footer .footer-info .info-list {
-        flex: none;
-        width: fit-content;
+    .col-logo {
+        text-align: center;
     }
 
-    footer .footer-info .info-list:nth-child(1) {
-        order: 1;
+    .col-logo img {
+        max-width: 6em;
     }
 
-    footer .footer-info .info-list:nth-child(2) {
-        order: 0;
+    .col-logo p {
+        margin: .3em 0 0;
+        font-size: .8em;
     }
 
-    footer .footer-info .info-list:nth-child(3) {
-        order: 2;
+    .col-cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .8em;
     }
 
-    footer .footer-info .info-list:nth-child(1) li .sep,
-    footer .footer-info .info-list:nth-child(3) li .sep {
-        padding: 0 0.4vw;
+    .card {
+        background: rgba(255,255,255,.08);
+        border-radius: .5em;
+        padding: .7em;
     }
 
-    footer .footer-info .info-list:nth-child(1) li .label,
-    footer .footer-info .info-list:nth-child(3) li .label {
-        flex: 0 0 15vw;
+    .card p {
+        margin: .3em 0;
+        font-size: .9em;
+        line-height: 1.5;
     }
 
-    html[lang="ko"] footer .footer-info .info-list:nth-child(1) {
-        padding-right: 6em;
+    .card strong {
+        font-family: "NanumSquareEB";
+        font-size: 1.111em;
+        margin-right: .3em;
     }
 }
