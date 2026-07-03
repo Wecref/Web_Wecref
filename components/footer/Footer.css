@@ -127,15 +127,15 @@ footer .footer-info .info-list:nth-child(2) img {
 
     footer .footer-info .info-list:nth-child(1) li .label,
     footer .footer-info .info-list:nth-child(3) li .label {
-        flex: 0 0 clamp(60px, 14vw, 135px);
+        flex: 0 0 clamp(72px, 16.8vw, 162px);
     }
 
     html[lang="en"] footer .footer-info .info-list:nth-child(1) li .label {
-        flex: 0 0 clamp(97px, 20vw, 97px);
+        flex: 0 0 clamp(116px, 24vw, 116px);
     }
 
     html[lang="en"] footer .footer-info .info-list:nth-child(3) li .label {
-        flex: 0 0 clamp(15px, 10vw, 51px);
+        flex: 0 0 clamp(18px, 12vw, 61px);
     }
 }
 
