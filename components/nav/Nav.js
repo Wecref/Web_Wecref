@@ -44,8 +44,6 @@ export function InitMenu(targets) {
 }
 
 export function InitLanguageMenu(targets) {
-    console.log(targets);
-
     targets.forEach(target => {
         target.addEventListener('click', event => {
             event.preventDefault();

@@ -1,17 +1,18 @@
 @charset "UTF-8";
 
 #contents-area-first {
-    color: #6b6b6b;
+    color: var(--color-text);
     display: flex;
     flex-direction: column;
     align-items: center;
+    content-visibility: auto;
 }
 
 #contents-area-first .section-title {
     margin: 2em 0em;
     font-family: "NanumSquareEB";
     font-size: 2em;
-    color: #6b6b6b;
+    color: var(--color-text);
 }
 
 #contents-area-first .section-title h1 {
@@ -39,7 +40,7 @@
 #contents-area-first .section-info {
     font-family: "NanumSquareR";
     font-size: 1em;
-    color: #686868;
+    color: var(--color-text-secondary);
     width: 100%;
     text-align: center;
     line-height: 1.7em;

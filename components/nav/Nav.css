@@ -6,7 +6,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    background-color: #fff;
+    background-color: var(--color-white);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -42,7 +42,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     font-size: 1.125em;
-    color: #686868;
+    color: var(--color-text-secondary);
 }
 
 .nav-body.active {
@@ -79,11 +79,11 @@ nav {
 .nav-menus li a:hover,
 .social-links li a:hover,
 .language-selector li a:hover {
-    color: #1ec8c8;
+    color: var(--color-teal);
 }
 
 .social-links {
-    background-color: #AFAFAF;
+    background-color: var(--color-social-bg);
     border-radius: 100em;
     width: fit-content;
     height: auto;
@@ -128,7 +128,7 @@ nav {
 
 .nav-menus a.active,
 .language-selector a.active {
-    color: #ff5a96;
+    color: var(--color-pink);
 }
 
 @media screen and (max-width: 1024px) {
@@ -158,7 +158,7 @@ nav {
 
     .nav-body {
         width: 100%;
-        background-color: #fff;
+        background-color: var(--color-white);
 
         display: none;
         flex-direction: column;
@@ -184,13 +184,6 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        height: auto;
-        min-height: 3em;
-    }
-}
-
-@media screen and (max-width: 425px) {
     nav {
         height: auto;
         min-height: 3em;

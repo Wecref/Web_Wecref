@@ -26,9 +26,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="shared/images/wecref_cion.png" />
     <title>Wecref</title>
 
-    <script type="module">
-      import { isKorea } from './shared/Language.js';
-      isKorea() ? window.location.replace("kr_index.html") : window.location.replace("en_index.html");
+    <script>
+      (navigator.language || navigator.userLanguage).slice(0, 2) === "ko"
+        ? location.replace("kr_index.html")
+        : location.replace("en_index.html");
     </script>
 </head>
 <body>
