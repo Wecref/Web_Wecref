@@ -46,42 +46,28 @@ footer .footer-info .info-list {
     padding: 0;
 }
 
-footer .footer-info .info-list:nth-child(1) li {
-    display: flex;
-    margin-bottom: .3em;
-    white-space: nowrap;
-}
-
-footer .footer-info .info-list:nth-child(1) li span:first-child {
-    flex: 0 0 8.5em;
-}
-
-html[lang="en"] footer .footer-info .info-list:nth-child(1) li span:first-child {
-    flex: 0 0 14.5em;
-}
-
+footer .footer-info .info-list:nth-child(1) li,
 footer .footer-info .info-list:nth-child(3) li {
     display: flex;
+    align-items: center;
     margin-bottom: .3em;
     white-space: nowrap;
 }
 
-footer .footer-info .info-list:nth-child(3) li span:first-child {
-    flex: 0 0 8em;
+footer .footer-info .info-list:nth-child(1) li .label,
+footer .footer-info .info-list:nth-child(3) li .label {
+    flex: 0 0 clamp(110px, 18vw, 170px);
+    text-align: right;
+    padding-right: .6em;
 }
 
-html[lang="en"] footer .footer-info .info-list:nth-child(3) li {
-    display: flex;
-    margin-bottom: .3em;
-    white-space: nowrap;
+html[lang="en"] footer .footer-info .info-list:nth-child(1) li .label {
+    flex: 0 0 clamp(140px, 22vw, 300px);
 }
 
-html[lang="en"] footer .footer-info .info-list:nth-child(3) li span:first-child {
-    flex: 0 0 5em;
-}
-
-html[lang="en"] .pipe {
-    color: transparent;
+footer .footer-info .info-list:nth-child(1) li .sep,
+footer .footer-info .info-list:nth-child(3) li .sep {
+    padding: 0 .4em;
 }
 
 footer .footer-info .info-list:nth-child(2) {
