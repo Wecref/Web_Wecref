@@ -128,6 +128,16 @@ footer .footer-info .info-list:nth-child(2) li {
         order: 2;
     }
 
+    footer .footer-info .info-list:nth-child(1) li .sep,
+    footer .footer-info .info-list:nth-child(3) li .sep {
+        padding: 0 0.4vw;
+    }
+
+    footer .footer-info .info-list:nth-child(1) li .label,
+    footer .footer-info .info-list:nth-child(3) li .label {
+        flex: 0 0 15vw;
+    }
+
     html[lang="ko"] footer .footer-info .info-list:nth-child(1) {
         padding-right: 6em;
     }
