@@ -79,7 +79,7 @@ nav {
 .nav-menus li a:hover,
 .social-links li a:hover,
 .language-selector li a:hover {
-    color: #ff5a96;
+    color: #1ec8c8;
 }
 
 .social-links {
@@ -128,7 +128,7 @@ nav {
 
 .nav-menus a.active,
 .language-selector a.active {
-    color: #1ec8c8;
+    color: #ff5a96;
 }
 
 @media screen and (max-width: 1024px) {
