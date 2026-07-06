@@ -87,4 +87,8 @@
     #contents-area-second .section-info {
         width: 90%;
     }
+
+    #contents-area-second .link-area {
+        width: 80%;
+    }
 }

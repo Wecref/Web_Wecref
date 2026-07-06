@@ -109,7 +109,15 @@ footer .footer-info .info-list:nth-child(2) li {
     display: none;
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 864px) {
+    footer {
+        font-size: .857em;
+    }
+
+    footer .footer-links {
+        width: 31%;
+    }
+
     footer .footer-row {
         display: none;
     }
@@ -118,11 +126,51 @@ footer .footer-info .info-list:nth-child(2) li {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1.5em;
-        padding: 1em 1.5em;
+        gap: 2.5em;
+        padding: 2em 1.5em;
         background-color: var(--color-footer-dark);
         width: 100%;
         box-sizing: border-box;
+    }
+
+    .col-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        width: 100%;
+    }
+
+    .col-cards > p {
+        display: flex;
+        flex-direction: column;
+        gap: .15em;
+        margin: 0;
+        font-size: 1em;
+        line-height: 1.8;
+    }
+
+    .col-cards > p strong {
+        font-family: "NanumSquareEB";
+        font-size: 1em;
+        color: #35d8d4;
+    }
+
+    .col-cards > p span {
+        font-family: "NanumSquareR";
+        font-size: .917em;
+        color: #1ec8c8;
+    }
+
+    html[lang="ko"] .col-cards > p:nth-child(4) > strong {
+        font-family: "NanumSquareR";
+        font-weight: normal;
+        color: #1ec8c8;
+    }
+
+    html[lang="en"] .col-cards > p:nth-child(3) > strong {
+        font-family: "NanumSquareR";
+        font-weight: normal;
+        color: #1ec8c8;
     }
 
     .col-logo {
@@ -130,36 +178,18 @@ footer .footer-info .info-list:nth-child(2) li {
     }
 
     .col-logo img {
-        max-width: 6em;
+        max-width: 8em;
     }
 
     .col-logo p {
         margin: .3em 0 0;
-        font-size: .8em;
+        font-size: 1em;
     }
+}
 
-    .col-cards {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: .8em;
-    }
-
-    .card {
-        background: rgba(255,255,255,.08);
-        border-radius: .5em;
-        padding: .7em;
-    }
-
-    .card p {
-        margin: .3em 0;
-        font-size: .9em;
-        line-height: 1.5;
-    }
-
-    .card strong {
-        font-family: "NanumSquareEB";
-        font-size: 1.111em;
-        margin-right: .3em;
+@media screen and (max-width: 320px) {
+    .col-cards,
+    html[lang="ko"] .col-cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -35,6 +35,7 @@
 
 #contents-area-first .section-logo p {
     font-size: 1em;
+    text-align: center;
 }
 
 #contents-area-first .section-info {
@@ -64,5 +65,9 @@
 @media screen and (max-width: 425px) {
     #contents-area-first .section-info {
         width: 90%;
+    }
+
+    #contents-area-first > div.section-logo > p {
+        font-size: 1em;
     }
 }

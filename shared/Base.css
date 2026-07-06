@@ -15,12 +15,13 @@ html {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    font-size: clamp(1px, 1.5vw + 1.2px, 30px);
+    font-size: clamp(14px, 1.2vw + 6px, 30px);
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
 }
 
 body {
+    margin: 0;
     word-break: keep-all;
 }
 
